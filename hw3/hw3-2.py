@@ -33,7 +33,7 @@ for d in data:
         toyJ.append(d)
 
 
-def solveCuttingStock_linear(J: List[Tuple[int, int]], m: int, results: Dict):
+def solveCuttingStock_linear(J: List[Tuple[int, int]], m: int, RUNTIMELIMIT: int):
     """Cutting-Stock Problem Solver
 
     Args:
@@ -188,14 +188,15 @@ def solveCuttingStock_linear(J: List[Tuple[int, int]], m: int, results: Dict):
                                                         * (a[j] * _u[j] + Y - a[j] - _w[j]) for j in range(1, m-1)),
         gbp.GRB.MINIMIZE)
 
+    model.setParam('TimeLimit', RUNTIMELIMIT)
     model.optimize()
-    results['linear'] = (model, X, Y, Xprime, Yprime)
-    # return model, X, Y, Xprime, Yprime
+
+    return model, X, Y, Xprime, Yprime
 
 
 # %%
 
-def solveCuttingStock(J: List[Tuple[int, int]], results):
+def solveCuttingStock(J: List[Tuple[int, int]], RUNTIMELIMIT:int):
     """Cutting-Stock Problem Solver
 
     Args:
@@ -287,39 +288,47 @@ def solveCuttingStock(J: List[Tuple[int, int]], results):
     # ======= OBJECTIVE ==========
     # directly using the non-linear term
     model.setObjective(X * Y, gbp.GRB.MINIMIZE)
+    model.setParam('TimeLimit', RUNTIMELIMIT)
     model.optimize()
+    return model, X, Y, Xprime, Yprime
 
-    results['nonlinear'] = (model, X, Y, Xprime, Yprime)
 
 
 # %%
-def show_results(results: Dict):
-    for key, value in results.items():
-        model, X, Y, Xprime, Yprime = value
-        print(f'=========== {key} ===========')
-        print(f'model obj: {model.objVal}')
-        print(f'(sub) optimal backpack size: {X} * {Y} = {X * Y}')
-        print(f'stock center:')
-        Jnum = len(Xprime)
-        for i in range(Jnum):
-            print(f'center: {Xprime[i]}, {Yprime[i]}')
-
+def show_results(key, *args):
+    model, X, Y, Xprime, Yprime = args
+    print(f' ========== {key} ===========')
+    print(f'model obj: {model.objVal}')
+    print(f'(sub) optimal backpack size: {X.x} * {Y.x} = {X.x * Y.x}')
+    print(f'stock center:')
+    Jnum = len(Xprime)
+    for i in range(Jnum):
+        print(f'\t {i}th stock center: {round(Xprime[i].x, 2)}, {round(Yprime[i].x)}')
 
 #%%
-if __name__ == '__main__':
-    results = {'linear': None, 'nonlinear': None}
-    waitsec = 60 * 2
-    p = multiprocessing.Process(
-        target=solveCuttingStock, name="CuttingStock (non-linear)", args=(J, results))
-    p.start()
-    time.sleep(waitsec)
-    p.terminate()
-    p2 = multiprocessing.Process(
-        target=solveCuttingStock_linear, name="CuttingStock (linear)", args=(J, 20, results))
-    p2.start()
-    time.sleep(waitsec)
-    p2.terminate()
-    show_results(results)
+runtimelimit = 1 * 60
+model, X, Y, Xprime, Yprime = solveCuttingStock(J, runtimelimit)
+linmodel, linX, linY, linXprime, linYprime = solveCuttingStock_linear(J, m = 20, RUNTIMELIMIT = runtimelimit)
+#%%
+show_results('non-linear', model, X, Y, Xprime, Yprime)
+show_results('linear', linmodel, linX, linY, linXprime, linYprime)
+#%%
+# if __name__ == '__main__':
+#     # https://stackoverflow.com/questions/10415028/how-can-i-recover-the-return-value-of-a-function-passed-to-multiprocessing-proce
+#     manager = multiprocessing.Manager()
+#     return_dict = manager.dict()
+#     waitsec = 20
+#     p = multiprocessing.Process(
+#         target=solveCuttingStock, name="CuttingStock (non-linear)", args=(J, return_dict))
+#     p.start()
+#     time.sleep(waitsec)
+#     p.terminate()
+#     p2 = multiprocessing.Process(
+#         target=solveCuttingStock_linear, name="CuttingStock (linear)", args=(J, 20, return_dict))
+#     p2.start()
+#     time.sleep(waitsec)
+#     p2.terminate()
+#     show_results(return_dict)
 
 
 # %%

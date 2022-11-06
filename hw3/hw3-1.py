@@ -81,8 +81,8 @@ def solve_axis(n: int, m: int,
     return model, X
 
 # %%
-Xmodel, X = solve_axis(n = 2, m=3, vector = a)
-Ymodel, Y = solve_axis(n = 2, m=3, vector = b)
+Xmodel, X = solve_axis(n = 2, m = 3, vector = a)
+Ymodel, Y = solve_axis(n = 2, m = 3, vector = b)
 # https://www.desmos.com/calculator
 
 
