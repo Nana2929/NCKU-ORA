@@ -1,0 +1,82 @@
+Overall efficiency of 0:Chinese: 0.9359387370573361
+Overall efficiency of 1:Foreign Languages: 1.0
+Overall efficiency of 2:History: 0.5679828465514678
+Overall efficiency of 3:Arts: 0.7700424778820322
+Overall efficiency of 4:Mathematics: 1.0
+Overall efficiency of 5:Physics: 1.0
+Overall efficiency of 6:Chemistry: 0.8048028760845745
+Overall efficiency of 7:Earth Sciences: 0.7176263541815805
+Overall efficiency of 8:Biology: 0.6652800983180466
+Overall efficiency of 9:Biotechnology: 0.6329910700326687
+Overall efficiency of 10:Mechanical Eng.: 0.8529820519301898
+Overall efficiency of 11:Electrical Eng.: 1.0
+Overall efficiency of 12:Information Eng.: 0.9625636100119122
+Overall efficiency of 13:Chemical Eng.: 1.0
+Overall efficiency of 14:Resources Eng.: 0.5680887873138104
+Overall efficiency of 15:Materials Eng.: 1.0
+Overall efficiency of 16:Civil Eng.: 0.7860883281445584
+Overall efficiency of 17:Hydraulic Eng.: 1.0
+Overall efficiency of 18:Architecture: 0.8000899194395532
+Overall efficiency of 19:Engineering Science: 0.7597667742514689
+Overall efficiency of 20:Naval Architecture: 0.6085413252148897
+Overall efficiency of 21:Urban Planning: 0.7835458362794095
+Overall efficiency of 22:Industrial Design: 0.9863178847345984
+Overall efficiency of 23:Aeronautical Eng.: 1.0
+Overall efficiency of 24:Environmental Eng.: 1.0
+Overall efficiency of 25:Surveying Eng.: 0.6595427188746705
+Overall efficiency of 26:Manufacturing Eng.: 0.8226472921377499
+Overall efficiency of 27:Biomedical Eng.: 1.0
+Overall efficiency of 28:Industrial Mgmt.: 0.7021361875014022
+Overall efficiency of 29:Transportation Mgmt.: 0.6313962613743934
+Overall efficiency of 30:Business Admin.: 1.0
+Overall efficiency of 31:Accountancy: 1.0
+Overall efficiency of 32:Statistics: 0.6887416659651221
+Overall efficiency of 33:Medicine: 0.9633681720911228
+Overall efficiency of 34:Nursing: 0.4331981180727493
+Overall efficiency of 35:Medical Technology: 0.8585235392431996
+Overall efficiency of 36:Occupational Therapy: 0.45376248714109524
+Overall efficiency of 37:Physical Therapy: 0.5287888857533116
+Overall efficiency of 38:Political Economy: 1.0
+Overall efficiency of 39:Education: 0.808713627161177
+Overall efficiency of 40:Law: 0.7360349633410068
+Overall efficiency of 0:Chinese: 0.9359387370573361
+Overall efficiency of 1:Foreign Languages: 1.0
+Overall efficiency of 2:History: 0.5679828465514678
+Overall efficiency of 3:Arts: 0.7700424778820322
+Overall efficiency of 4:Mathematics: 1.0
+Overall efficiency of 5:Physics: 1.0
+Overall efficiency of 6:Chemistry: 0.8048028760845745
+Overall efficiency of 7:Earth Sciences: 0.7176263541815805
+Overall efficiency of 8:Biology: 0.6652800983180466
+Overall efficiency of 9:Biotechnology: 0.6329910700326687
+Overall efficiency of 10:Mechanical Eng.: 0.8529820519301898
+Overall efficiency of 11:Electrical Eng.: 1.0
+Overall efficiency of 12:Information Eng.: 0.9625636100119122
+Overall efficiency of 13:Chemical Eng.: 1.0
+Overall efficiency of 14:Resources Eng.: 0.5680887873138104
+Overall efficiency of 15:Materials Eng.: 1.0
+Overall efficiency of 16:Civil Eng.: 0.7860883281445584
+Overall efficiency of 17:Hydraulic Eng.: 1.0
+Overall efficiency of 18:Architecture: 0.8000899194395532
+Overall efficiency of 19:Engineering Science: 0.7597667742514689
+Overall efficiency of 20:Naval Architecture: 0.6085413252148897
+Overall efficiency of 21:Urban Planning: 0.7835458362794095
+Overall efficiency of 22:Industrial Design: 0.9863178847345984
+Overall efficiency of 23:Aeronautical Eng.: 1.0
+Overall efficiency of 24:Environmental Eng.: 1.0
+Overall efficiency of 25:Surveying Eng.: 0.6595427188746705
+Overall efficiency of 26:Manufacturing Eng.: 0.8226472921377499
+Overall efficiency of 27:Biomedical Eng.: 1.0
+Overall efficiency of 28:Industrial Mgmt.: 0.7021361875014022
+Overall efficiency of 29:Transportation Mgmt.: 0.6313962613743934
+Overall efficiency of 30:Business Admin.: 1.0
+Overall efficiency of 31:Accountancy: 1.0
+Overall efficiency of 32:Statistics: 0.6887416659651221
+Overall efficiency of 33:Medicine: 0.9633681720911228
+Overall efficiency of 34:Nursing: 0.4331981180727493
+Overall efficiency of 35:Medical Technology: 0.8585235392431996
+Overall efficiency of 36:Occupational Therapy: 0.45376248714109524
+Overall efficiency of 37:Physical Therapy: 0.5287888857533116
+Overall efficiency of 38:Political Economy: 1.0
+Overall efficiency of 39:Education: 0.808713627161177
+Overall efficiency of 40:Law: 0.7360349633410068
